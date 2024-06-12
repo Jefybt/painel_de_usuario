@@ -45,6 +45,24 @@ export const LayoutDashboard = () => {
                                         Dashboard
                                     </a>
                                 </li>
+                                <li className="nav-item">
+                                    <a
+                                        className={`nav-link`}
+                                        href={'/dashboard'}
+                                    >
+                                        <span data-feather="home"></span>
+                                        Categorias
+                                    </a>
+                                </li>
+                                <li className="nav-item">
+                                    <a
+                                        className={`nav-link`}
+                                        href={'/dashboard'}
+                                    >
+                                        <span data-feather="home"></span>
+                                        Usuario
+                                    </a>
+                                </li>
                             </ul>
                         </div>
                     </nav>

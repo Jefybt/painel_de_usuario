@@ -5,6 +5,7 @@ import axios from 'axios';
 import { Toast } from '@/components/Toast';
 import { Loading } from '@/components/Loading';
 import { useRouter } from 'next/navigation';
+import { setCookie } from 'nookies'
 
 export default function Login() {
 
@@ -41,6 +42,13 @@ export default function Login() {
                     // Nextjs - SSR - Servidor
                     // Requisição -> Headers
                     // Cookies -> Navegador
+
+                    setCookie(
+                        undefined,
+                        'painel1pitchau.token',
+                        resposta.data.token
+                    
+                    )
 
                     router.push('/dashboard')
 
